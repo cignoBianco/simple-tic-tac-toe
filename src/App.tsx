@@ -1,10 +1,12 @@
-import React from 'react';
+import { JSX } from 'react';
 import './App.css';
+import { Game } from './components';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <h1>Tic Tac Toe</h1>
+	  <div data-theme="dark" className="App">
+		  <h1>Tic Tac Toe</h1>
+		  <Game/>
     </div>
   );
 }
